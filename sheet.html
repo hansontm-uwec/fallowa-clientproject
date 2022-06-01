@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tavern - Character Sheet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Nunito&family=Oswald:wght@400;600&family=Poppins:wght@100;300;400;700&family=Raleway&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="toggle-nav.js"></script>
+</head>
+<body>
+    <header>
+        <div class="bonobo">
+            <img src="images/logo.svg" alt="logo">
+            <h1 class="desktop">The Tavern</h1>
+        </div>
+        <h1 class="mobile">Character Sheet</h1>
+        <div class="menu" onclick="toggleNav()">
+            <p>Menu</p>
+        </div>
+    </header>
+    <nav class="toggle-nav">
+        <a href="index.html" class="dropdown"><p>Home</p></a>
+        <a href="about.html" class="dropdown"><p>About Us</p></a>
+        <a href="sheet.html" class="dropdown sheetbutton"><p>Character Sheet Maker</p></a>
+        <a href="spells.html" class="dropdown"><p>Spell Tracker</p></a>
+        <a href="signin.html" class="dropdown dice"><p>Sign In</p></a>
+    </nav>
+    <main>
+        <h1 class="desktop pagetitle">Character Sheet</h1>
+        <form class="chasheet">
+            <div class="buttons">
+                <a><p>All Sheets</p></a>
+                <input type="submit" value="Save">
+            </div>
+            <section class="sheet">
+                <div class="name">
+                    <input type="text" placeholder="Name" name="name">
+                </div>
+                <div class="basics">
+                    <input type="text" placeholder="Class" name="class">
+                    <input type="text" placeholder="Race" name="race">
+                    <input type="number" placeholder="Lvl" name="level" id="lvl">
+                </div>
+                <div class="stats">
+                    <input type="number" placeholder="Str" name="str">
+                    <input type="number" placeholder="Dex" name="dex">
+                    <input type="number" placeholder="Con" name="con">
+                </div>
+                <div class="stats">
+                    <input type="number" placeholder="Int" name="int">
+                    <input type="number" placeholder="Wis" name="wis">
+                    <input type="number" placeholder="Cha" name="cha">
+                </div>
+                <div class="battle">
+                    <input type="number" placeholder="AC" name="ac">
+                    <input type="number" placeholder="Initiative" name="initiative">
+                    <input type="number" placeholder="Speed" name="speed">
+                </div>
+                <div class="battle">
+                    <input type="number" placeholder="Max HP" name="maxhp">
+                    <input type="number" placeholder="HP" name="hp">
+                    <input type="number" placeholder="Hit Die" name="hitdie">
+                </div>
+                <div class="weapons">
+                    <div class="weapon">
+                        <input type="text" placeholder="Weapon" name="weapon1" class="item">
+                        <input type="text" placeholder="Attck" name="attack1" class="attack">
+                        <input type="text" placeholder="Dmg" name="damage1" class="damage">
+                    </div>
+                    <div class="weapon">
+                        <input type="text" placeholder="Weapon" name="weapon2" class="item">
+                        <input type="text" placeholder="Attck" name="attack2" class="attack">
+                        <input type="text" placeholder="Dmge" name="damage2" class="damage">
+                    </div>
+                    <div class="weapon">
+                        <input type="text" placeholder="Weapon" name="weapon3" class="item">
+                        <input type="text" placeholder="Attck" name="attack3" class="attack">
+                        <input type="text" placeholder="Dmge" name="damage3" class="damage">
+                    </div>
+                </div>
+                <div class="abilities">
+                    <textarea placeholder="Skills" name="skills"></textarea>
+                    <textarea placeholder="Saving Throws" name="savingthrows"></textarea>
+                    <textarea placeholder="Proficiencies" name="proficiencies"></textarea>
+                </div>
+                <div class="things">
+                    <textarea placeholder="Equipment" name="equipment"></textarea>
+                    <textarea placeholder="Features & Traits" name="featuresntraits"></textarea>
+                </div>
+                <div class="about">
+                    <textarea placeholder="About Character" name="about"></textarea>
+                </div>
+            </section>
+        </form>
+    </main>
+</body>

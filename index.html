@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tavern - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Nunito&family=Oswald:wght@400;600&family=Poppins:wght@100;300;400;700&family=Raleway&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="toggle-nav.js"></script>
+</head>
+<body>
+    <header>
+        <div class="bonobo">
+            <img src="images/logo.svg" alt="logo">
+            <h1 class="desktop">The Tavern</h1>
+        </div>
+        <h1 class="mobile">Home</h1>
+        <div class="menu" onclick="toggleNav()">
+            <p>Menu</p>
+        </div>
+    </header>
+    <nav class="toggle-nav">
+        <a href="index.html" class="dropdown"><p>Home</p></a>
+        <a href="about.html" class="dropdown"><p>About Us</p></a>
+        <a href="sheet.html" class="dropdown sheetbutton"><p>Character Sheet Maker</p></a>
+        <a href="spells.html" class="dropdown"><p>Spell Tracker</p></a>
+        <a href="signin.html" class="dropdown dice"><p>Sign In</p></a>
+    </nav>
+        <section class="headingimage">
+            <div>
+                <img src="images/logo.svg" alt="logo">
+                <h2>The Tavern</h2>
+            </div>
+        </section>
+    <main class="imgtop">
+        <h1 class="desktop pagetitle">Home</h1>
+        <section class="home-content mobile">
+            <div id="p1">
+                <p>The Tavern is a free social networking app for D&D players where you can meet other players and organize campaigns. Whether you're a player or a DM, serious or silly, freely available or on a strict schedule, The Tavern is here to help you meet other adventurers you can play with.</p>
+            </div>
+            <div id="p2">
+                <p>
+                Meet new people, compare scheuldes and organize campaigns with our free app:
+                <ul>
+                    <li>Make a profile with your name, your character sheets, your schedule, and your game preferences</li>
+                    <li>Search for other players in your area or all over the world</li>
+                    <li>Group messaging with people in your party</li>
+                </ul>
+                </p>
+            </div>
+            <img src="images/App.svg" alt="Screenshot of the app" class="screenshot">
+        </section>
+        <section class="content-home desktop">
+            <div>
+                <div class="paragraph">
+                    <p>The Tavern is a free social networking app for D&D players where you can meet other players and organize campaigns. Whether you're a player or a DM, serious or silly, freely available or on a strict schedule, The Tavern is here to help you meet other adventurers you can play with.<br>
+                    Meet new people, compare scheuldes and organize campaigns with our free app:
+                    <ul>
+                        <li>Make a profile with your name, your character sheets, your schedule, and your game preferences</li>
+                        <li>Search for other players in your area or all over the world</li>
+                        <li>Group messaging with people in your party</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            <img src="images/App.svg" alt="Screenshot of the app" class="screenshot">
+        </section>
+    </main>
+</body>

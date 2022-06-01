@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tavern - Spells</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Nunito&family=Oswald:wght@400;600&family=Poppins:wght@100;300;400;700&family=Raleway&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="toggle-nav.js"></script>
+</head>
+<body>
+    <header>
+        <div class="bonobo">
+            <img src="images/logo.svg" alt="logo">
+            <h1 class="desktop">The Tavern</h1>
+        </div>
+        <h1 class="mobile">Spell Tracker</h1>
+        <div class="menu" onclick="toggleNav()">
+            <p>Menu</p>
+        </div>
+    </header>
+    <nav class="toggle-nav">
+        <a href="index.html" class="dropdown"><p>Home</p></a>
+        <a href="about.html" class="dropdown"><p>About Us</p></a>
+        <a href="sheet.html" class="dropdown sheetbutton"><p>Character Sheet Maker</p></a>
+        <a href="spells.html" class="dropdown"><p>Spell Tracker</p></a>
+        <a href="signin.html" class="dropdown dice"><p>Sign In</p></a>
+    </nav>
+    <main class="spelltracker">
+        <h1 class="desktop pagetitle">Spells</h1>
+        <section class="spellcaster">
+            <form>
+                <label for="spellclass">Class:</label>
+                <select name="spellclass" id="spellclass">
+                    <option value="blank"></option>
+                    <option value="wizard">Wizard</option>
+                    <option value="sorcerer">Sorcerer</option>
+                    <option value="warlock">Warlock</option>
+                    <option value="bard">Bard</option>
+                    <option value="druid">Druid</option>
+                    <option value="cleric">Cleric</option>
+                </select>
+            </form>
+        </section>
+        <section class="forms">
+        <section class="spells">
+            <h2>Spell List</h2>
+            <table>
+                <tr>
+                    <th>Lvl</th>
+                    <th>School</th>
+                    <th>Name</th>
+                    <th class="extra">V,S,M</th>
+                    <th>Casting Time</th>
+                    <th>Duration</th>
+                    <th class="extra">Range</th>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>Conjuration</td>
+                    <td>Acid Splash</td>
+                    <td class="extra">V,S</td>
+                    <td>1 Action</td>
+                    <td>Instant</td>
+                    <td class="extra">60 ft</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>Transmutation</td>
+                    <td>Prestidigitation</td>
+                    <td class="extra">V,S</td>
+                    <td>1 Action</td>
+                    <td>1 Hour</td>
+                    <td class="extra">10 ft</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Enchantment</td>
+                    <td>Bless</td>
+                    <td class="extra">V,S,M</td>
+                    <td>1 Action</td>
+                    <td>1 Minute</td>
+                    <td class="extra">30 ft</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Divination</td>
+                    <td>Identify</td>
+                    <td class="extra">V,S,M</td>
+                    <td>1 Minute</td>
+                    <td>Instant</td>
+                    <td class="extra">Touch</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Illusion</td>
+                    <td>Invisibility</td>
+                    <td class="extra">V,S,M</td>
+                    <td>1 Action</td>
+                    <td>1 Hour</td>
+                    <td class="extra">Touch</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Abjuration</td>
+                    <td>Lesser Restoration</td>
+                    <td class="extra">V,S</td>
+                    <td>1 Action</td>
+                    <td>Instant</td>
+                    <td class="extra">Touch</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Abjuration</td>
+                    <td>Counterspell</td>
+                    <td class="extra">S</td>
+                    <td>1 Reaction</td>
+                    <td>Instant</td>
+                    <td class="extra">60 ft</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Evocation</td>
+                    <td>Fireball</td>
+                    <td class="extra">V,S,M</td>
+                    <td>1 Action</td>
+                    <td>Instant</td>
+                    <td class="extra">150 ft</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Transmutation</td>
+                    <td>Polymorph</td>
+                    <td class="extra">V,S,M</td>
+                    <td>1 Action</td>
+                    <td>1 Hour</td>
+                    <td class="extra">60 ft</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Enchantment</td>
+                    <td>Confusion</td>
+                    <td class="extra">V,S,M</td>
+                    <td>1 Action</td>
+                    <td>1 Minute</td>
+                    <td class="extra">90 ft</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Conjuration</td>
+                    <td>Conjure Elemental</td>
+                    <td class="extra">V,S,M</td>
+                    <td>1 Minute</td>
+                    <td>1 Hour</td>
+                    <td class="extra">90 ft</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Divination</td>
+                    <td>Scrying</td>
+                    <td class="extra">V,s,M</td>
+                    <td>10 Minutes</td>
+                    <td>10 Minutes</td>
+                    <td class="extra">Self</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Necromancy</td>
+                    <td>Eyebite</td>
+                    <td class="extra">V,S</td>
+                    <td>1 Action</td>
+                    <td>1 Minute</td>
+                    <td class="extra">Self</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Evocation</td>
+                    <td>Heal</td>
+                    <td class="extra">V,S</td>
+                    <td>1 Action</td>
+                    <td>Instant</td>
+                    <td class="extra">60 ft</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Illusion</td>
+                    <td>Simulacrum</td>
+                    <td class="extra">V,S,M</td>
+                    <td>12 Hours</td>
+                    <td>Until Dispelled</td>
+                    <td class="extra">Touch</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Conjuration</td>
+                    <td>Teleport</td>
+                    <td class="extra">V</td>
+                    <td>1 Action</td>
+                    <td>Instant</td>
+                    <td class="extra">10 ft</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Enchantment</td>
+                    <td>Dominate Monster</td>
+                    <td class="extra">V,S</td>
+                    <td>1 Action</td>
+                    <td>1 Hour</td>
+                    <td class="extra">60 ft</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Evocation</td>
+                    <td>Telepathy</td>
+                    <td class="extra">V,S,M</td>
+                    <td>1 Action</td>
+                    <td>24 Hours</td>
+                    <td class="extra">Unlimited</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Illusion</td>
+                    <td>Weird</td>
+                    <td class="extra">V,S</td>
+                    <td>1 Action</td>
+                    <td>1 Minute</td>
+                    <td class="extra">120 ft</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Enchantment</td>
+                    <td>Power Word Kill</td>
+                    <td class="extra">V</td>
+                    <td>1 Action</td>
+                    <td>Instant</td>
+                    <td class="extra">60 ft</td>
+                </tr>
+            </table>
+        </section>
+        <section class="tracker">
+            <section class="known">
+                <h2>Known Spells  </h2>
+                <form>
+                    <input type="text" placeholder="Spell Name"> <input type="checkbox"> <span class="checkmark"></span>
+                    <input type="text" placeholder="Spell Name"> <input type="checkbox"> <span class="checkmark"></span>
+                    <input type="text" placeholder="Spell Name"> <input type="checkbox"> <span class="checkmark"></span>
+                    <input type="text" placeholder="Spell Name"> <input type="checkbox"> <span class="checkmark"></span>
+                    <input type="text" placeholder="Spell Name"> <input type="checkbox"> <span class="checkmark"></span>
+                    <input type="text" placeholder="Spell Name"> <input type="checkbox"> <span class="checkmark"></span>
+                    <input type="text" placeholder="Spell Name"> <input type="checkbox"> <span class="checkmark"></span>
+                    <input type="text" placeholder="Spell Name"> <input type="checkbox"> <span class="checkmark"></span>
+                    <input type="text" placeholder="Spell Name"> <input type="checkbox"> <span class="checkmark"></span>
+                    <input type="text" placeholder="Spell Name"> <input type="checkbox"> <span class="checkmark"></span>
+                    <input type="text" placeholder="Spell Name"> <input type="checkbox"> <span class="checkmark"></span>
+                    <input type="text" placeholder="Spell Name"> <input type="checkbox"> <span class="checkmark"></span>
+                    <input type="text" placeholder="Spell Name"> <input type="checkbox"> <span class="checkmark"></span>
+                    <input type="text" placeholder="Spell Name"> <input type="checkbox"> <span class="checkmark"></span>
+                    <input type="text" placeholder="Spell Name"> <input type="checkbox"> <span class="checkmark"></span>
+                    <input type="text" placeholder="Spell Name"> <input type="checkbox"> <span class="checkmark"></span>
+                    <input type="text" placeholder="Spell Name"> <input type="checkbox"> <span class="checkmark"></span>
+                    <input type="text" placeholder="Spell Name"> <input type="checkbox"> <span class="checkmark"></span>
+                    <input type="text" placeholder="Spell Name"> <input type="checkbox"> <span class="checkmark"></span>
+                    <input type="text" placeholder="Spell Name"> <input type="checkbox"> <span class="checkmark"></span>
+                </form>
+            </section>
+        </section>
+        </section>
+        <section class="slots">
+            <section class="binga">
+                <h2>Spell Slots</h2>
+                <form>
+                    <div class="row">
+                        <h3>1st</h3> <div><input type="checkbox"> <input type="checkbox"> <input type="checkbox"> <input type="checkbox"></div>
+                    </div>
+                    <div class="row">
+                        <h3>2nd</h3> <div><input type="checkbox"> <input type="checkbox"> <input type="checkbox"></div>
+                    </div>
+                    <div class="row">
+                        <h3>3rd</h3> <div><input type="checkbox"> <input type="checkbox"> <input type="checkbox"></div>
+                    </div>
+                    <div class="row">
+                        <h3>4th</h3> <div><input type="checkbox"> <input type="checkbox"> <input type="checkbox"></div>
+                    </div>
+                    <div class="row">
+                        <h3>5th</h3> <div><input type="checkbox"> <input type="checkbox"> <input type="checkbox"></div>
+                    </div>
+                    <div class="row">
+                        <h3>6th</h3> <div><input type="checkbox"> <input type="checkbox"></div>
+                    </div>
+                    <div class="row">
+                        <h3>7th</h3> <div><input type="checkbox"> <input type="checkbox"></div>
+                    </div>
+                    <div class="row">
+                        <h3>8th</h3> <div><input type="checkbox"></div>
+                    </div>
+                    <div class="row">
+                        <h3>9th</h3> <div><input type="checkbox"></div>
+                    </div>
+                    <input type="reset">
+                </form>
+            </section>
+        </section>
+    </main>
+</body>
